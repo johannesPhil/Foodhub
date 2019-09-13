@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    margin: 0;
+    padding:0;
+}
+
+.wrapper, main{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+h2{
+    font-size: 2em;
+}
+h2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: solid 2px #ff2901;
+}
+
+nav{
+    width: 100%;
+    height: 8vh;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff2901;
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+
+nav span {
+    font-size: 3em;
+}
+
+nav ul{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: block;
+    width: 100%;
+    list-style: none;
+    margin: 0 2.5%;
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size:1.3em;
+}
+
+section#hero{
+    position: relative;
+    height: 80vh;
+    overflow: auto;
+    color: #fff;
+}
+section#hero::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://res.cloudinary.com/jphil/image/upload/v1568399540/hero_i9je0a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(.4);
+}
+
+#hero-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#search-div{
+    width: 100%;
+    height: 1.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+form#search input[type=text]{
+    width: 85%;
+    padding:0 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: transparent;
+    border: solid 2px #ff2901;
+    border-right: transparent;
+    color:#fff;
+    font-size: .45em;
+    transition: all 500ms;
+}
+form#search input[type=text]:hover,form#search input[type=text]:active{
+    border: solid 2px #ff2901;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+form#search button{
+    width: 15%;
+    background-color: #ff2901;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: .8em;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+form#search button:hover{
+    background-color: #fff;
+    color: #ff2901;
+}
+
+#search, #search-btn{
+    height: inherit;
+    color: #fff;
+    border: none;
+}
+
+#popular{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    background-color: #fafafa;
+}
+
+#popular-wrapper{
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#popular-wrapper>*{
+    
+}
+
+.food-card{
+    margin: 2.5% 0;
+    height: 15em;
+    box-shadow: 0 1px 2px 3px rgba(45, 60, 72, 0.13);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.meal-img{
+    width: 100%;
+    height: 70%;
+}
+
+.meal-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.meal-op{
+    height: 30%;
+    padding: 5%;
+    background-color: #fff;;
+    color: #8b8988;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.meal-op p{
+    margin: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.cart-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3em;
+}
+
+.cart-price a{
+    cursor: pointer;
+    color: #ff2901;
+}
+
+.cart-price a:hover{
+    font-size: 1.2em;
+}
+
+#about{
+    width: 100%;
+    
+
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* #about::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/delivery.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(.5);
+} */
+
+
+
+#about-desc p{
+    line-height: 2em;
+}
+
+footer{
+    width: 100%;
+    padding: 2.5% 10%;
+    height: auto;
+    overflow: auto;
+    background-color: #2D3C48;
+    text-align: center;
+    color: #fff;
+}
+
+
+.sitemap ul{
+    width: 100%;
+    
+    padding-inline-start: 0;
+}
+.sitemap ul li{
+    width: inherit;
+    display: block;
+
+}
+
+.sitemap ul li a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin: 10% 0;
+}
+
+.sitemap ul li i{
+    margin: 0 5%;
+}
+
+.appstore a{
+    display: block;
+    width: 70%;
+    margin: 5%;
+    padding: 5%;
+    text-decoration: none;
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 30px;
+    text-align: center;
+    transition: 500ms;
+}
+
+/* .appstore a:hover{
+    color: #2D3C48;
+
+} */
+
+a.apple-store, a.play-store{
+    
+    
+    color: #fff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    #hero{
+        font-size: 2em;
+    }
+    #search{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    #popular{
+        padding: 5% 2.5%;
+    }
+
+    .food-card{
+        width: 45%;
+    }
+
+    #about-hero{
+        display: none;
+    }
+    
+    #about-desc{
+        width: 100%;
+        height: auto;
+        padding: 5% 10%;
+        background-color: #fff;
+        font-size: 1.1em;
+        color: #fff;
+        background-image: url(https://res.cloudinary.com/jphil/image/upload/v1568399532/delivery_bz7mhh.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        background-repeat: no-repeat; 
+    }
+
+    .subfooter{
+        width: 100%;
+        margin: 1.5% 0;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px #fff;
+    }
+    
+    .sitemap{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .appstore{
+        width: 100%;
+        margin:10% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    #hero{
+        font-size: 3em;
+    }
+
+    #hero h1{
+        font-size: 3em;   
+    }
+
+    #search{
+        width: 60%;
+        margin: 5% auto;
+    }
+
+    #popular{
+        padding: 5% 5%;
+    }
+
+    .food-card{
+        width: 28.3%;
+    }
+
+    #about-hero{
+        display: none;
+    }
+    
+    #about-desc{
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        background-color: #fff;
+        font-size: 1.1em;
+        color: #fff;
+        background-image: url(https://res.cloudinary.com/jphil/image/upload/v1568399532/delivery_bz7mhh.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        background-repeat: no-repeat; 
+    }
+
+    .subfooter{
+        width: 100%;
+        margin: 1.5% 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: solid 1px #fff;
+    }
+    
+    .sitemap{
+        width: 50%;
+        height: auto;
+        text-align: left;
+    }
+
+    .appstore{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 860px) {
+        .food-card{
+            width: 20%;
+            margin: 5% 2.5%;
+        }
+
+        #about-hero{
+            display: block;
+            width:50%;
+            height: inherit;
+            background-image: url(https://res.cloudinary.com/jphil/image/upload/v1568399532/delivery_bz7mhh.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #about-desc{
+            width: 50%;
+            padding: 5%;
+            background-color: #fff;
+            font-size: 1.3em;
+            color: #8b8988; 
+            background: #fff;
+        }
+    }
+    @media screen and (max-width: 860px)
+}
+
+
