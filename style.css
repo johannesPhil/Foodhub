@@ -1,33 +1,39 @@
-*{
+* {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-html, body{
+
+html,
+body {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
-.wrapper, main{
+.wrapper,
+main {
     width: 100%;
     height: auto;
     overflow: auto;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: 2em;
 }
-h2::after{
+
+h2::after {
     content: "";
     display: block;
     width: 100%;
     border-bottom: solid 2px #ff2901;
 }
 
-nav{
+nav {
     width: 100%;
     height: 8vh;
     padding: 0 5%;
@@ -40,19 +46,18 @@ nav{
     font-family: 'Roboto';
 }
 
-
 nav span {
     font-size: 3em;
 }
 
-nav ul{
+nav ul {
     width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-nav ul li{
+nav ul li {
     display: block;
     width: 20%;
     height: 100%;
@@ -60,26 +65,28 @@ nav ul li{
     margin: 0 2.5%;
     text-align: center;
 }
-nav ul li a{
+
+nav ul li a {
     display: block;
     width: 100%;
     text-decoration: none;
     color: #fff;
-    font-size:1.3em;
+    font-size: 1.3em;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: #fff;
     color: #ff2901;
 }
 
-section#hero{
+section#hero {
     position: relative;
     height: 80vh;
     overflow: auto;
     color: #fff;
 }
-section#hero::before{
+
+section#hero::before {
     position: absolute;
     content: "";
     top: 0;
@@ -93,7 +100,7 @@ section#hero::before{
     filter: brightness(.4);
 }
 
-#hero-content{
+#hero-content {
     position: relative;
     top: 50%;
     left: 50%;
@@ -101,7 +108,7 @@ section#hero::before{
     text-align: center;
 }
 
-#search-div{
+#search-div {
     width: 100%;
     height: 1.2em;
     display: flex;
@@ -109,27 +116,30 @@ section#hero::before{
     align-items: center;
     justify-content: center;
 }
-form#search input[type=text]{
+
+form#search input[type=text] {
     width: 85%;
-    padding:0 5%;
+    padding: 0 5%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: transparent;
     border: solid 2px #ff2901;
     border-right: transparent;
-    color:#fff;
+    color: #fff;
     font-size: .45em;
     transition: all 500ms;
 }
-form#search input[type=text]:hover,form#search input[type=text]:active{
+
+form#search input[type=text]:hover,
+form#search input[type=text]:active {
     border: solid 2px #ff2901;
 }
 
-::placeholder{
+::placeholder {
     color: #fff;
 }
 
-form#search button{
+form#search button {
     width: 15%;
     background-color: #ff2901;
     border-top-right-radius: 20px;
@@ -139,25 +149,26 @@ form#search button{
     transition: all 500ms;
 }
 
-form#search button:hover{
+form#search button:hover {
     background-color: #fff;
     color: #ff2901;
 }
 
-#search, #search-btn{
+#search,
+#search-btn {
     height: inherit;
     color: #fff;
     border: none;
 }
 
-#popular{
+#popular {
     width: 100%;
     height: auto;
     overflow: auto;
     background-color: #fafafa;
 }
 
-#popular-wrapper{
+#popular-wrapper {
     width: 100%;
     height: auto;
     margin: 5% 0;
@@ -168,11 +179,9 @@ form#search button:hover{
     justify-content: space-between;
 }
 
-#popular-wrapper>*{
-    
-}
+#popular-wrapper>* {}
 
-.food-card{
+.food-card {
     margin: 2.5% 0;
     height: 15em;
     box-shadow: 0 1px 2px 3px rgba(45, 60, 72, 0.13);
@@ -180,33 +189,34 @@ form#search button:hover{
     border-bottom-right-radius: 10px;
 }
 
-.meal-img{
+.meal-img {
     width: 100%;
     height: 70%;
 }
 
-.meal-img img{
+.meal-img img {
     width: 100%;
     height: 100%;
 }
 
-.meal-op{
+.meal-op {
     height: 30%;
     padding: 5%;
-    background-color: #fff;;
+    background-color: #fff;
+    ;
     color: #8b8988;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.meal-op p{
+.meal-op p {
     margin: 0;
     text-align: center;
     font-size: 1.2em;
     font-weight: 100;
 }
 
-.cart-price{
+.cart-price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -214,23 +224,22 @@ form#search button:hover{
     font-size: 1.3em;
 }
 
-.cart-price a{
+.cart-price a {
     cursor: pointer;
     color: #ff2901;
 }
 
-.cart-price a:hover{
+.cart-price a:hover {
     font-size: 1.2em;
 }
 
-#about{
+#about {
     width: 100%;
-    
-
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
 }
+
 
 /* #about::before{
     position: absolute;
@@ -246,13 +255,11 @@ form#search button:hover{
     filter: brightness(.5);
 } */
 
-
-
-#about-desc p{
+#about-desc p {
     line-height: 2em;
 }
 
-footer{
+footer {
     width: 100%;
     padding: 2.5% 10%;
     height: auto;
@@ -262,19 +269,17 @@ footer{
     color: #fff;
 }
 
-
-.sitemap ul{
+.sitemap ul {
     width: 100%;
-    
     padding-inline-start: 0;
 }
-.sitemap ul li{
+
+.sitemap ul li {
     width: inherit;
     display: block;
-
 }
 
-.sitemap ul li a{
+.sitemap ul li a {
     display: block;
     cursor: pointer;
     text-decoration: none;
@@ -282,11 +287,11 @@ footer{
     margin: 10% 0;
 }
 
-.sitemap ul li i{
+.sitemap ul li i {
     margin: 0 5%;
 }
 
-.appstore a{
+.appstore a {
     display: block;
     width: 70%;
     margin: 5%;
@@ -299,39 +304,34 @@ footer{
     transition: 500ms;
 }
 
-/* .appstore a:hover{
+.appstore a:hover {
+    background-color: #fff;
     color: #2D3C48;
+}
 
-} */
-
-a.apple-store, a.play-store{
-    
-    
+a.apple-store,
+a.play-store {
     color: #fff;
 }
 
-@media screen and (min-width: 320px) and (max-width: 720px){
-    #hero{
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    #hero {
         font-size: 2em;
     }
-    #search{
+    #search {
         width: 80%;
         margin: 5% auto;
     }
-
-    #popular{
+    #popular {
         padding: 5% 2.5%;
     }
-
-    .food-card{
+    .food-card {
         width: 45%;
     }
-
-    #about-hero{
+    #about-hero {
         display: none;
     }
-    
-    #about-desc{
+    #about-desc {
         width: 100%;
         height: auto;
         padding: 5% 10%;
@@ -341,26 +341,23 @@ a.apple-store, a.play-store{
         background-image: url(https://res.cloudinary.com/jphil/image/upload/v1568399532/delivery_bz7mhh.jpg);
         background-size: cover;
         background-position: center;
-        
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-
-    .subfooter{
+    .subfooter {
         width: 100%;
         margin: 1.5% 0;
         align-items: center;
         justify-content: space-between;
         border-bottom: solid 1px #fff;
     }
-    
-    .sitemap{
+    .sitemap {
         width: 100%;
         height: auto;
         text-align: center;
     }
-    .appstore{
+    .appstore {
         width: 100%;
-        margin:10% 0;
+        margin: 10% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -369,32 +366,26 @@ a.apple-store, a.play-store{
 }
 
 @media screen and (min-width: 720px) {
-    #hero{
+    #hero {
         font-size: 3em;
     }
-
-    #hero h1{
-        font-size: 3em;   
+    #hero h1 {
+        font-size: 3em;
     }
-
-    #search{
+    #search {
         width: 60%;
         margin: 5% auto;
     }
-
-    #popular{
+    #popular {
         padding: 5% 5%;
     }
-
-    .food-card{
+    .food-card {
         width: 28.3%;
     }
-
-    #about-hero{
+    #about-hero {
         display: none;
     }
-    
-    #about-desc{
+    #about-desc {
         width: 100%;
         height: auto;
         padding: 5%;
@@ -404,11 +395,9 @@ a.apple-store, a.play-store{
         background-image: url(https://res.cloudinary.com/jphil/image/upload/v1568399532/delivery_bz7mhh.jpg);
         background-size: cover;
         background-position: center;
-        
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-
-    .subfooter{
+    .subfooter {
         width: 100%;
         margin: 1.5% 0;
         display: flex;
@@ -416,47 +405,40 @@ a.apple-store, a.play-store{
         justify-content: space-around;
         border-bottom: solid 1px #fff;
     }
-    
-    .sitemap{
+    .sitemap {
         width: 50%;
         height: auto;
         text-align: left;
     }
-
-    .appstore{
+    .appstore {
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
-
     @media screen and (min-width: 860px) {
-        .food-card{
+        .food-card {
             width: 20%;
             margin: 5% 2.5%;
         }
-
-        #about-hero{
+        #about-hero {
             display: block;
-            width:50%;
+            width: 50%;
             height: inherit;
             background-image: url(https://res.cloudinary.com/jphil/image/upload/v1568399532/delivery_bz7mhh.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
-        
-        #about-desc{
+        #about-desc {
             width: 50%;
             padding: 5%;
             background-color: #fff;
             font-size: 1.3em;
-            color: #8b8988; 
+            color: #8b8988;
             background: #fff;
         }
     }
     @media screen and (max-width: 860px)
 }
-
-
